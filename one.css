@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main {
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative; /* Add a containing block */
+  border-radius: 20px;
+}
+
+#left {
+  background-color: rgb(210, 185, 60);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin-right: 0px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#right {
+  background-color: rgb(230, 222, 185);
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-left: 0px;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main img {
+    position: absolute;
+    top: 13%;
+    left: 47%;
+    z-index: 1;
+    height: 400px;
+
+}
+#discription {
+    position: absolute;
+    top: 30%;
+    left:18%;
+}
+#discription h5 {
+    font-family: Helvetica Bold;
+    font-size: large;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+}
+#discription h1 {
+    font-size: 70px;
+    color: black;
+    margin-bottom: 20px;
+}
+#discription p {
+    font-size: 19px;
+}
+#pokeball {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    top: 78%;
+    left: 15%;
+    height: 200px;
+    width: 200px;
+}
+#pokeball img {
+    position:absolute;
+    height: 140px;
+    width: 140px;
+    left: 0%;
+}
+#logo {
+    position: relative;
+    left: -28%;
+    top: 8%;
+
+}
+#logo img {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+.hamburger {
+  position: absolute;
+
+  top: 3%;
+  right: 3%;
+  width: 2em;
+  height: 2em;
+  border: none;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger[aria-expanded="true"] span {
+  transform: rotate(45deg);
+}
+
+.hamburger[aria-expanded="true"] + .nav-links {
+  display: block;
+}
+
+.nav-links {
+  position: absolute;
+  top: 3em;
+  right: 0;
+  background-color: #333;
+  padding: 1em;
+  display: none;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+}
+

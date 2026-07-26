@@ -1,0 +1,338 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width:100%;
+
+}
+main {
+    height: 83%;
+    width: 60%;
+    background-image: url(./Gemini_Generated_Image_2i0knt2i0knt2i0k.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    left: 10%;
+    top: 5%;
+}
+header {
+    width: 100%;
+    height: 15%;
+
+}
+#ham {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(223, 228, 232);
+   
+    position: relative;
+    top: 40%;
+    left: 2%;
+    
+}
+#ham img {
+    height: 20px;
+    width: 20px;
+}
+#logo {
+    position: relative;
+    left: 44%;
+    top: 1%;
+    background-color:;
+    height:30px;
+    width: 100px;
+}
+#logo img {
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    
+}
+#mode {
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+    position: relative;
+    top: -10%;
+    left: 92%;
+}
+#mode img {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    
+}
+section {
+    position: relative;
+    top: 2%;
+    left: 5%;
+    height: 8%;
+    width: 98%;
+    
+}
+.search {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 50px; /* Pill shape */
+      
+      /* Soft drop shadow matching the reference */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(226, 232, 240, 0.6);
+      
+      max-width: 300px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+    }
+
+    /* Styling your icon image */
+    .search img {
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      object-fit: contain;
+      opacity: 0.7; /* Softens icon color to match design */
+    }
+
+    /* Styling the inner text input */
+    .search input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 15px;
+      color: #1e293b;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* Style placeholder text */
+    .search input::placeholder {
+      color: #94a3b8;
+    }
+
+    /* Subtle interaction when clicking into the input */
+    .search:focus-within {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      border-color: #cbd5e1;
+    }
+#filter{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    width: 170PX;
+    height: 90%;
+    padding: 15px;
+    display: inline;
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#filter img{
+    height: 15px;
+    width: 15px;
+    align-items: end;
+}
+#sort {
+    height: 90%;
+    width: 50px;
+    position: absolute;
+    background-color: white;
+    top:13%;
+    left: 88%;
+    border-radius: 12px;
+    padding: 5px;
+}
+#sort img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+
+#card {
+    position: relative;
+    top: 5%;
+    height: 52%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card {
+  height: 99%;
+  width: 20%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: system-ui, sans-serif;
+}
+
+
+.card:nth-child(1) { border-bottom: 4px solid #4ade80; }     
+.card:nth-child(2) { border-bottom: 4px solid rgb(19, 13, 32); }  
+.card:nth-child(3) { border-bottom: 4px solid rgb(242, 45, 45); } 
+.card:nth-child(4) { border-bottom: 4px solid rgb(49, 70, 147); }
+.top, .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top span { color: #94a3b8; font-weight: bold; }
+
+.img {
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.img img { 
+  width: 100%; 
+  height: auto; 
+}
+
+.card:nth-child(1) .img {
+  background: radial-gradient(circle, #dcfce7 0%, transparent 70%);
+}
+
+.card:nth-child(2) .img {
+  background: radial-gradient(circle, #f1f1f8 0%, transparent 70%);
+}
+
+.card:nth-child(3) .img {
+  background: radial-gradient(circle, #fee2e2 0%, transparent 70%);
+}
+
+.card:nth-child(4) .img {
+  background: radial-gradient(circle, #dbeafe 0%, transparent 70%);
+}
+
+.type {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.card:nth-child(1) .type {
+  background: #e8f5e9;
+  color: #166534;
+}
+
+.card:nth-child(2) .type {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.card:nth-child(3) .type {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.card:nth-child(4) .type {
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+.arr {
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 16px 28px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
+  top: 7%;
+  z-index: 3;
+}
+
+/* Individual Feature Item */
+.con {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  position: relative;
+}
+
+/* Vertical divider lines between sections */
+.con:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  height: 36px;
+  width: 1px;
+  background-color: #e2e8f0;
+}
+
+/* Circular Icon Container */
+.im {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.im img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Individual Light Pastel Backgrounds for Icons */
+.con:nth-child(1) .im { background-color: #e0e7ff; } /* Light Blue */
+.con:nth-child(2) .im { background-color: #e6f4ea; } /* Light Green */
+.con:nth-child(3) .im { background-color: #fef3c7; } /* Light Yellow */
+.con:nth-child(4) .im { background-color: #f3e8ff; } /* Light Purple */
+
+/* Typography */
+.con h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.con p {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.3;
+}
