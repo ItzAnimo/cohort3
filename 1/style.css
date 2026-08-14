@@ -1,0 +1,132 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+header{
+    height: 112px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    
+}
+nav a {
+    font-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+}
+header button {
+        background:#1c1c1c;
+        border-radius: 6px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #E0E0E0;
+        cursor: pointer;
+        
+}
+.hero {
+    height: 200px;
+    width: 100%;
+}
+.hero h1 {
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    padding: 20px;
+}
+#category{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    display: flex;
+}
+#category button {
+    background-color: #1c1c1e; 
+    color: #e5e5e7;           
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 20px;    
+    border: none;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height:330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.card {
+    height: 270px;
+    width: 22%;
+    background-color: #1c1c1e;
+    border-radius: 15px;
+}
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+}
+footer h2 {
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cat {
+    height: 20px;
+    background-color: rgb(255, 77, 0);
+    color: yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+.info {
+    padding: 15px;
+}
+.info p {
+    color: rgb(95, 108, 119);
+}
