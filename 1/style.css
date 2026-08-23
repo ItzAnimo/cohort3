@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    height: 80%;
+    width: 80%;
+    margin: 1px solid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 34% 19% 19% 28%;
+
+    grid-template-areas: 
+    "A1 A2 A3 A4"
+    "A1 A5 A5 A4"
+    "A6 A5 A5 A7"
+    "A8 A8 A9 A7"
+    ;
+    grid-gap: 8px;
+
+}
+#yo{
+    background-color: red;
+    grid-area: A1;
+    border-radius: 10px;
+}
+#use{
+    background-color: aqua;
+    grid-area: A2;
+    border-radius: 10px;
+}
+#head{
+    background-color:blue ;
+    grid-area: A3;
+    border-radius: 10px;
+}
+#time{
+    background-color: aquamarine;
+    grid-area: A4;
+    border-radius: 10px;
+}
+#quote{
+    background-color: blueviolet;
+    grid-area: A6;
+    border-radius: 10px;
+}
+#flexfit{
+    background-color: palevioletred;
+    grid-area: A5;
+    border-radius: 10px;
+}
+#train{
+    background-color: pink;
+    grid-area: A8;
+    border-radius: 10px;
+}
+#girl{
+    background-color: mediumslateblue;
+    grid-area: A9;
+    border-radius: 10px;
+}
+#sign{
+    background-color: bisque;
+    grid-area:A7;
+    border-radius: 10px;
+}

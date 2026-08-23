@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+    background-image:url("./smooth-white-wave-background_52683-55288.avif");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+main{
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas:
+    "A1 A1 A2 A3 A4"
+    "A1 A1 A2 A3 A5"
+    "A6 A7 A8 A8 A5"
+    "A6 A7 A8 A8 A9"
+    "A10 A10 A10 A11 A11";
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    padding: 8px;
+}
+#about {
+    background-color: aqua;
+    grid-area: A1;
+    border-radius: 10px;
+}
+#ui {
+    background-color: aquamarine;
+    grid-area: A2;
+    border-radius: 10px;
+}
+#tab{
+    background-color: pink;
+    grid-area: A3;
+    border-radius: 10px;
+}
+#link {
+    background-color: blueviolet;
+    grid-area: A4;
+    border-radius: 10px;
+}
+#photo {
+    background-color: green;
+    grid-area: A6;
+    border-radius: 10px;
+}
+#tech {
+    background-color: yellow;
+    grid-area: A7;
+    border-radius: 10px;
+}
+#work {
+    background-color: bisque;
+    grid-area: A8;
+    border-radius: 10px;
+}
+#speed {
+    background-color: cadetblue;
+    grid-area: A5;
+    border-radius: 10px;
+}
+#mode {
+    background-color: violet;
+    grid-area: A9;
+    border-radius: 10px;
+}
+#current {
+    background-color: chocolate;
+    grid-area: A10;
+    border-radius: 10px;
+}
+#collab {
+    background-color: crimson;
+    grid-area: A11;
+    border-radius: 10px;
+}

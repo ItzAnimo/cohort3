@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+main {
+            height: 85%;
+            width: 100%;
+            background-color: whitesmoke;
+         
+        }
+.grid-container {
+            display: grid;
+            width: 90vw;
+            height: 90vh;
+            gap: 10px;
+            /* 10 Columns and 8 Rows setup */
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            border: 2px solid #333;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .item {
+            border: 2px solid #222;
+            background-color: #e2e8f0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #333;
+        }
+
+        /* --- Top Section --- */
+        .top-left-sm { grid-column: 1 / 3; grid-row: 1; }
+        .top-banner  { grid-column: 3 / 9; grid-row: 1; } /* Main top bar */
+        .top-right-sm{ grid-column: 9 / 11; grid-row: 1; }
+
+        /* Small Notch Blocks (Making the T-shape effect under the banner) */
+        .notch-left  { grid-column: 3; grid-row: 2; }
+        .notch-right { grid-column: 8; grid-row: 2; }
+
+        /* --- Left Side --- */
+        .left-sq-1   { grid-column: 1 / 3; grid-row: 2; }
+        .left-sq-2   { grid-column: 1 / 3; grid-row: 3 / 5; }
+
+        /* --- Right Side --- */
+        .right-sq-1  { grid-column: 9 / 11; grid-row: 2; }
+        .right-sq-2  { grid-column: 9 / 11; grid-row: 3 / 5; }
+
+        /* --- Inner Columns --- */
+        .inner-left-1  { grid-column: 3 / 5; grid-row: 3; }
+        .inner-left-2  { grid-column: 3 / 5; grid-row: 4 / 6; }
+
+        .center-pill   { grid-column: 5 / 7; grid-row: 2 / 6; background-color: #cbd5e1; } /* Tall center block */
+
+        .inner-right-1 { grid-column: 7 / 9; grid-row: 3 / 5; }
+        .inner-right-2 { grid-column: 7 / 9; grid-row: 5; }
+
+        /* --- L-Shape Bottom Left & Right --- */
+        /* To create L-shapes, we position rectangular children or combine rows/cols */
+        .l-shape-left {
+            grid-column: 1 / 5;
+            grid-row: 5 / 7;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+            border: none;
+            background: none;
+        }
+        .l-left-part {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            border: 2px solid #222;
+            background-color: #e2e8f0;
+        }
+        .l-bottom-part {
+            grid-column: 3 / 5;
+            grid-row: 2;
+            border: 2px solid #222;
+            background-color: #e2e8f0;
+        }
+
+        .l-shape-right {
+            grid-column: 7 / 11;
+            grid-row: 5 / 7;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 5px;
+            border: none;
+            background: none;
+        }
+        .r-left-part {
+            grid-column: 1 / 3;
+            grid-row: 2;
+            border: 2px solid #222;
+            background-color: #e2e8f0;
+        }
+        .r-right-part {
+            grid-column: 3 / 5;
+            grid-row: 1 / 3;
+            border: 2px solid #222;
+            background-color: #e2e8f0;
+        }
+
+        /* --- Bottom Row Blocks --- */
+        .bottom-center { grid-column: 5 / 7; grid-row: 6; }
+
+        .footer-left   { grid-column: 1 / 5; grid-row: 7; }
+        .footer-center { grid-column: 5 / 7; grid-row: 7; }
+        .footer-right  { grid-column: 7 / 11; grid-row: 7; }
