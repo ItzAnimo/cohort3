@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+h3{
+    color: white;
+}
+h2{
+    color: white;
+}
+p{
+  color: rgb(90, 89, 89);  
+}
 html{
     height: 100%;
     width: 100%;
@@ -10,10 +19,11 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 body{
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 60%;
     background-color: black;
     padding: 20px;
     border-radius: 40px;
@@ -33,62 +43,212 @@ main{
     "A6 A7 A8 A8 A5"
     "A6 A7 A8 A8 A9"
     "A10 A10 A10 A11 A11";
+    border: 3px solid black;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    padding: 8px;
+    padding: 10px;
 }
 #about {
-    background-color: aqua;
+    background-color: transparent;
     grid-area: A1;
     border-radius: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+#profile {
+    display: flex;
+    gap: 10px;
+}
+#profile p{
+    color: rgb(90, 89, 89);
+}
+#profile h3{
+    color: white;
+}
+#logo {
+    height: 40px;
+    width: 40px;
+    background-image: url("./photo-1528892952291-009c663ce843.avif");
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#a {
+    color: white;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+#b{
+    color: rgb(90, 89, 89);
+    font-size: 11px;
 }
 #ui {
-    background-color: aquamarine;
+    background-image: url("./pexels-cup-of-couple-6633016.jpg");
     grid-area: A2;
     border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #tab{
-    background-color: pink;
+    background-image: url("./pexels-photo-6476565.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: A3;
     border-radius: 10px;
 }
 #link {
-    background-color: blueviolet;
+    background-color:transparent;
     grid-area: A4;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 8px;
+    justify-content: center;
+    color:rgb(127, 124, 124);
+
+}
+.link{
+    
+    height: 35px;
+    width: 35px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
 }
 #photo {
-    background-color: green;
+    background-image: url("./photo-1528892952291-009c663ce843.avif");
     grid-area: A6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10px;
 }
 #tech {
-    background-color: yellow;
+    background-color: transparent;
+    border: 3px solid black;
     grid-area: A7;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
 }
+#tech p{
+    font-size: 13px;
+}
+#tech h3 {
+    font-size: 17px;
+}
+#stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+
+}
+.stack{
+    height: 30px;
+    width: 30px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: rgb(44, 43, 43);
+}
+
 #work {
-    background-color: bisque;
+    background-image: url("./lap-30530403.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-area: A8;
     border-radius: 10px;
 }
 #speed {
-    background-color: cadetblue;
+    background-color: transparent;
     grid-area: A5;
     border-radius: 10px;
+    border: 3px solid black;
+    padding: 20px;
+    position: relative;
+}
+#arr {
+    align-self: self-end;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: rgb(28, 28, 28);
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    cursor: pointer;
+    border: 2px solid rgb(71, 71, 71);
+}
+#arr img{
+    height: 100%;
+    width: 100%;
+}
+#speed h3 {
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+}
+#speed p {
+    color: rgb(90, 89, 89);
+    font-size: 12px
+
 }
 #mode {
-    background-color: violet;
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 20px;
     grid-area: A9;
     border-radius: 10px;
 }
 #current {
-    background-color: chocolate;
+    background-color: transparent;
     grid-area: A10;
     border-radius: 10px;
+    border: 3px solid black;
+    padding: 40px;
+    display: flex;
+}
+#current h3{
+    font-size: 17px;
+}
+#current p{
+    font-size: 13px;
 }
 #collab {
-    background-color: crimson;
+    background-color: transparent;
     grid-area: A11;
     border-radius: 10px;
+    border: 3px solid black;
+    padding: 20px;
+}
+#olo{
+    height: 100%;
+    width: 30%;
+    
+}
+#olo img{
+    height: 100%;
+    width: 100%;
+}
+#collab h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+#collab p{
+    font-size: 13px;
 }
