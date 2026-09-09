@@ -1,2 +1,2 @@
-# cohort3
-all assignment done in the course
+cohort 3
+Assignment 3 solution
